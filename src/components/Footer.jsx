@@ -23,7 +23,7 @@ export default function Footer() {
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
       aria-label="Footer"
     >
-      {/* About-style background layers */}
+      {/* Background layers */}
       <div className="footerGrid" aria-hidden="true" />
       <div className="footerGlow" aria-hidden="true" />
       <div className="footerNoise" aria-hidden="true" />
@@ -37,7 +37,7 @@ export default function Footer() {
           transition={{ duration: 0.55, ease: "easeOut" }}
         >
           Made with <span className="footerHeart">❤️</span> by{" "}
-          <strong>Haileyesus</strong> 
+          <strong>Haileyesus</strong>
         </motion.p>
 
         <motion.ul
@@ -47,7 +47,10 @@ export default function Footer() {
           viewport={{ once: true, amount: 0.4 }}
           variants={{
             hidden: { opacity: 0 },
-            visible: { opacity: 1, transition: { staggerChildren: 0.09, delayChildren: 0.12 } },
+            visible: {
+              opacity: 1,
+              transition: { staggerChildren: 0.09, delayChildren: 0.12 },
+            },
           }}
           aria-label="Social links"
         >
@@ -56,7 +59,11 @@ export default function Footer() {
               key={i}
               variants={{
                 hidden: { opacity: 0, y: 14 },
-                visible: { opacity: 1, y: 0, transition: { duration: 0.45, ease: "easeOut" } },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 0.45, ease: "easeOut" },
+                },
               }}
               whileHover={reduceMotion ? {} : { y: -3, scale: 1.07 }}
               whileTap={reduceMotion ? {} : { scale: 0.97 }}
@@ -83,9 +90,9 @@ export default function Footer() {
           viewport={{ once: true, amount: 0.35 }}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.12 }}
         >
-          <p className="footerYear">© {currentYear} Haileyesus. All rights reserved.</p>
-
-         
+          <p className="footerYear">
+            © {currentYear} Haileyesus. All rights reserved.
+          </p>
         </motion.div>
       </div>
     </motion.footer>

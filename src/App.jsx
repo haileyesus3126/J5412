@@ -7,6 +7,8 @@ import BackToTop from "./components/BackToTop";
 
 import Home from "./pages/Home";
 import ProjectDetail from "./pages/ProjectDetail";
+ 
+
 
 function App() {
   return (

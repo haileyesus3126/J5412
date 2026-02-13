@@ -1,4 +1,45 @@
 /* src/pages/ProjectDetail.css */
+/* Make Project Detail theme-aware */
+.cs,
+.cs-wrap {
+  background: transparent;
+  color: var(--text);
+}
+
+.cs-hero,
+.cs-card,
+.cs-side-card,
+.cs-shot,
+.cs-lightbox-inner {
+  background: var(--card);
+  border: 1px solid var(--card-line);
+  box-shadow: var(--shadow-1);
+}
+
+.cs-muted,
+.cs-sub,
+.cs-backlink {
+  color: var(--text-muted);
+  opacity: 1;
+}
+
+.cs-nav-link {
+  border: 1px solid var(--line);
+  color: var(--text-soft);
+}
+
+.cs-nav-link.active {
+  border-color: var(--line-strong);
+}
+
+.cs-tag {
+  border: 1px solid var(--line);
+  color: var(--text-soft);
+}
+
+.cs-lightbox {
+  background: rgba(0, 0, 0, 0.72); /* overlay is OK */
+}
 
 .cs {
   padding: 92px 18px 70px;
