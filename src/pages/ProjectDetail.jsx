@@ -136,7 +136,7 @@ export default function ProjectDetail() {
         <div className="cs-layout">
           <aside className="cs-side">
             <div className="cs-side-card">
-              <div className="cs-side-title">Documentation</div>
+              
               <nav className="cs-nav">
                 {sections.map((s) => (
                   <a

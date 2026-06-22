@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
 
 import Home from "./pages/Home";
-import ProjectDetail from "./pages/ProjectDetail";
+
  
 
 
@@ -17,7 +17,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects/:slug" element={<ProjectDetail />} />
+        
       </Routes>
 
       <BackToTop />
